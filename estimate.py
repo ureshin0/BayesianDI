@@ -31,8 +31,8 @@ def run_mcmc_estimation(d, wl, line_profile, obs_times, dmat, nside, key_seed=0)
         i = jnp.arccos(cosi) #
         
         # Rotational velocity (km/s)
-        #v = numpyro.sample('v', dist.Uniform(0.0, 120.0)) #
-        v = numpyro.sample('v', dist.Normal(30.0, 10.0)) #
+        v = numpyro.sample('v', dist.Uniform(0.0, 120.0)) #
+        #v = numpyro.sample('v', dist.Normal(30.0, 10.0)) #
 
         # Quadratic Limb Darkening parameters (Kipping 2013 sampling)
         q1 = numpyro.sample('q1', dist.Uniform(0.0, 1.0))
@@ -88,7 +88,7 @@ def run_mcmc_estimation(d, wl, line_profile, obs_times, dmat, nside, key_seed=0)
 
     kernel = NUTS(model_viu,
                  target_accept_prob=0.9,
-                 dense_mass=False,
+                 dense_mass=True,
                  max_tree_depth=10,
                  init_strategy=init_to_value(values=init_vals))
     
