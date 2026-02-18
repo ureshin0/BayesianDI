@@ -1,0 +1,14 @@
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.4
+
+astropy==6.0.1
+healpy==1.17.3
+healjax @ git+https://github.com/ghcollin/healjax.git
+
+jax==0.4.30
+jaxlib==0.4.30
+numpyro==0.18.0
+
+corner==2.2.3
+tqdm==4.67.1
