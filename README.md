@@ -23,11 +23,5 @@ This repository provides a Python implementation for estimating stellar paramete
 
 1. **Parameter Estimation**
    Run `estimate.py` to perform MCMC sampling for stellar parameters.
-   ```
-   python estimate.py
-   ```
 2. **Surface Map Reconstruction**
    Run `moments.py` to generate posterior mean and variance maps.
-   ```
-   python moments.py
-   ```
