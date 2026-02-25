@@ -12,7 +12,7 @@ import healpy as hp
 import healjax as hj
 
 # Import core physics and matrix functions
-from src.physics import (
+from src.BayesianDI.physics import (
     angular_distance, 
     get_full_design_matrix, 
     get_exposure_matrix
