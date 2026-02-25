@@ -293,10 +293,10 @@ def main():
     true_w = jnp.array([1.00, 0.98, 1.03, 0.99, 1.01, 0.97, 1.02, 1.00])
 
     pi = np.pi
-    npix = hp.nside2npix(nside)
-    theta, phi = hp.pix2ang(nside, np.arange(npix))
+    npix = healpy.nside2npix(nside)
+    theta, phi = healpy.pix2ang(nside, np.arange(npix))
     def add_s(m, th, ph, r, i):
-        mask = hp.rotator.angdist([th, ph], [theta, phi]) < r
+        mask = healpy.rotator.angdist([th, ph], [theta, phi]) < r
         m[mask] *= i
         return m
     map1 = add_s(np.ones(npix), pi/4, 0, pi/6, 0.1)
