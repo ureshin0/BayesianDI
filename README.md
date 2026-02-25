@@ -16,7 +16,7 @@ This repository provides a Python implementation for estimating stellar paramete
    For faster MCMC sampling, it is highly recommended to install the GPU-enabled version of JAX separately, depending on your CUDA environment.
    For CUDA 12,
    ```
-   pip install -U "jax[cuda12_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+   pip install -U "jax[cuda12]"
    ```
 
 ## Usage
