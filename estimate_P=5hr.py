@@ -12,7 +12,7 @@ from numpyro.infer import MCMC, NUTS, init_to_value
 import healjax as hp
 
 # Import core physics functions from our local module
-from physics import angular_distance, get_full_design_matrix
+from src.physics import angular_distance, get_full_design_matrix
 
 # Enable 64-bit precision for scientific computing
 jax.config.update("jax_enable_x64", True)
