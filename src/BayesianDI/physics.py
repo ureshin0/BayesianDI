@@ -2,7 +2,7 @@ import jax.numpy as jnp
 import jax
 from functools import partial
 import healjax as hp
-from BayesianDI.const import c0
+from src.BayesianDI.const import c0
     
 def incline(theta0, phi0, alpha):
     """
