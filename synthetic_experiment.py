@@ -6,10 +6,10 @@ import numpyro.distributions as dist
 from numpyro.infer import MCMC, NUTS
 from functools import partial
 import healjax as hp
-from const import c0
+from src.const import c0
 import matplotlib.pyplot as plt
 import healpy
-from physics import incline, doppler_shift, limb_darkening
+from src.physics import incline, doppler_shift, limb_darkening
 from map import map1, map2, map3
 from scipy.stats import norm
 from pathlib import Path
